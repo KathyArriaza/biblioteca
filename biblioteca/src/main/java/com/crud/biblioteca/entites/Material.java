@@ -26,11 +26,4 @@ public class Material {
     private List<Revista> Revista;
 
 
-
-
-
-
-
-
-
 }
