@@ -22,7 +22,7 @@ public class Roles {
     @Column(unique = true)
     private String nombre;
 
-    @JsonIgnoreProperties({"roles", "handler", "hibernateLazyInitializer"}) //Investigar para ver errores de bucle
+    @JsonIgnoreProperties({"roles", "handler", "hibernateLazyInitializer"})
     @ManyToMany  (mappedBy = "roles")
     private List<Usuario> users;
 
