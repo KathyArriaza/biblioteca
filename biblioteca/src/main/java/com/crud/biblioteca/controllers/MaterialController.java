@@ -1,0 +1,7 @@
+package com.crud.biblioteca.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MaterialController {
+}
