@@ -2,13 +2,18 @@ package com.crud.biblioteca.Implements;
 
 import com.crud.biblioteca.entites.Material;
 import com.crud.biblioteca.repositories.MaterialRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Optional;
 
 public class MaterialImpl implements MaterialRepository {
 
+    @Autowired
+    private MaterialRepository materialRepository;
+
     public String callConsultaMateriales(String tipoMaterial) throws Exception {
-        return null;
+        return
+        materialRepository.callConsultaMateriales(tipoMaterial);
     }
 
     @Override
