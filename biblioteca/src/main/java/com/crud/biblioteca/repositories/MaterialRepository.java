@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface MaterialRepository extends CrudRepository<Material, Long> {
+
+String callConsultaMateriales(String tipoMaterial) throws Exception;
 }
